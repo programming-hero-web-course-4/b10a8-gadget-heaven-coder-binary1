@@ -1,7 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 import { MdFavoriteBorder, MdOutlineShoppingCart } from "react-icons/md";
 
 const NavBar = () => {
+  const location = useLocation();
+  const param = useParams();
+
   const links = (
     <>
       <li>
@@ -23,8 +26,21 @@ const NavBar = () => {
     </>
   );
   return (
-    <div className="navbar z-10 max-w-7xl lg:absolute top-5 left-0 right-0 mx-auto">
-      <div className="navbar-start lg:text-white">
+    <div
+      className={
+        location.pathname === "/" || location.pathname === `/${param.category}`
+          ? "navbar z-10 max-w-7xl lg:absolute top-5 left-0 right-0 mx-auto"
+          : "navbar z-10 max-w-7xl  top-5 left-0 right-0 mx-auto"
+      }
+    >
+      <div
+        className={
+          location.pathname === "/" ||
+          location.pathname === `/${param.category}`
+            ? "navbar-start lg:text-white"
+            : "navbar-start"
+        }
+      >
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -49,9 +65,18 @@ const NavBar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Gadget Heaven</a>
+        <NavLink to="/" className="btn btn-ghost text-xl">
+          Gadget Heaven
+        </NavLink>
       </div>
-      <div className="navbar-center hidden lg:flex text-white">
+      <div
+        className={
+          location.pathname === "/" ||
+          location.pathname === `/${param.category}`
+            ? "navbar-center hidden lg:flex text-white"
+            : "navbar-center hidden lg:flex "
+        }
+      >
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end space-x-4">

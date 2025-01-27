@@ -1,0 +1,312 @@
+[
+  {
+    "product_id": "GAD006",
+    "product_title": "iPhone 13 Mini",
+    "product_image": "https://i.ibb.co.com/P9wtMzH/GAD006.jpg",
+    "category": "Smartphones",
+    "price": 699.0,
+    "description": "The iPhone 13 Mini combines the power of the A15 Bionic chip and a 12MP dual-camera system in a compact design. Ideal for users looking for a small yet powerful smartphone with an OLED display.",
+    "Specification": [
+      "5.4-inch OLED Display",
+      "A15 Bionic Chip",
+      "12MP Dual Camera",
+      "Battery Life up to 17 hours"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "Apple"
+  },
+  {
+    "product_id": "GAD010",
+    "product_title": "HP Spectre x360 14",
+    "product_image": "https://i.ibb.co.com/7QdvMTQ/GAD010.png",
+    "category": "Computers",
+    "price": 1799.99,
+    "description": "The HP Spectre x360 14 is a premium 2-in-1 convertible laptop with a 13.5-inch OLED touch display, Intel Core i7, and up to 16GB of RAM. It's perfect for work, study, and creativity.",
+    "Specification": [
+      "13.5-inch OLED Display",
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "Up to 16 hours Battery"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "HP"
+  },
+  {
+    "product_id": "GAD017",
+    "product_title": "Sony WH-1000XM5",
+    "product_image": "https://i.ibb.co.com/8Y7hxN3/GAD017.jpg",
+    "category": "Headphones",
+    "price": 348.0,
+    "description": "Sony WH-1000XM5 delivers industry-leading noise cancellation, excellent sound quality, and up to 30 hours of battery life. These over-ear headphones are designed for comfort and immersive listening experiences.",
+    "Specification": [
+      "Industry-Leading Noise Cancellation",
+      "30 Hours Battery Life",
+      "LDAC, AAC Codec Support",
+      "Touch Controls",
+      "Quick Charge"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "brand": "Sony"
+  },
+
+  {
+    "product_id": "GAD003",
+    "product_title": "Google Pixel 8 Pro",
+    "product_image": "https://i.ibb.co.com/HX7M3rL/GAD003.jpg",
+    "category": "Smartphones",
+    "price": 899.0,
+    "description": "With Google's best-in-class software and the 50MP main camera, the Pixel 8 Pro brings you flawless photography and an enhanced Google Assistant experience. Powered by Tensor G3, it offers a smooth and responsive experience.",
+    "Specification": [
+      "6.7-inch LTPO OLED",
+      "50MP Main Camera",
+      "Tensor G3 Chip",
+      "5000mAh Battery",
+      "IP68 Water Resistance"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Google"
+  },
+  {
+    "product_id": "GAD002",
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://i.ibb.co.com/LdhnTqd/GAD002.jpg",
+    "category": "Smartphones",
+    "price": 1199.99,
+    "description": "The Samsung Galaxy S23 Ultra features a 200 MP camera, Snapdragon 8 Gen 2, and a 6.8-inch Dynamic AMOLED display. It’s the ultimate phone for those who want cutting-edge tech for photography, gaming, and productivity.",
+    "Specification": [
+      "6.8-inch Dynamic AMOLED",
+      "200MP Main Camera",
+      "Snapdragon 8 Gen 2",
+      "5000mAh Battery",
+      "8K Video Recording"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Samsung"
+  },
+  {
+    "product_id": "GAD004",
+    "product_title": "OnePlus 11 5G",
+    "product_image": "https://i.ibb.co.com/dtDCVZC/GAD004.jpg",
+    "category": "Smartphones",
+    "price": 799.99,
+    "description": "OnePlus 11 5G is powered by Snapdragon 8 Gen 2, featuring a 50MP triple camera setup, a massive 5000mAh battery, and ultra-fast charging. The 120Hz AMOLED display makes it perfect for gaming and media consumption.",
+    "Specification": [
+      "6.7-inch AMOLED",
+      "50MP Triple Camera",
+      "Snapdragon 8 Gen 2",
+      "5000mAh Battery",
+      "120Hz Refresh Rate"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "OnePlus"
+  },
+  {
+    "product_id": "GAD021",
+    "product_title": "Apple AirPods Pro 2",
+    "product_image": "https://i.ibb.co.com/23RHqpQ/GAD021.jpg",
+    "category": "Accessories",
+    "price": 249.0,
+    "description": "Apple AirPods Pro 2 feature excellent noise cancellation, spatial audio, and up to 6 hours of battery life. They provide an immersive audio experience with great sound quality and a customizable fit.",
+    "Specification": [
+      "Active Noise Cancellation",
+      "Up to 6 Hours Battery Life",
+      "Spatial Audio",
+      "IPX4 Water Resistance",
+      "H2 Chip"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Apple"
+  },
+
+  {
+    "product_id": "GAD020",
+    "product_title": "Arlo Ultra 2 Security Camera",
+    "product_image": "https://i.ibb.co.com/0KMcDPT/GAD020.png",
+    "category": "Security Cameras",
+    "price": 399.99,
+    "description": "Arlo Ultra 2 offers 4K video with HDR, two-way audio, and advanced motion detection. It’s perfect for homeowners looking for premium security with easy installation and remote monitoring.",
+    "Specification": [
+      "4K UHD Video",
+      "HDR",
+      "Two-Way Audio",
+      "Motion Detection",
+      "Wireless Connectivity"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Arlo"
+  },
+
+  {
+    "product_id": "GAD007",
+    "product_title": "Apple MacBook Pro 14 M2",
+    "product_image": "https://i.ibb.co.com/bLCNpH9/GAD007.png",
+    "category": "Computers",
+    "price": 1999.0,
+    "description": "The MacBook Pro with the M2 Pro chip provides professional-level performance in a portable design. It offers a 14-inch Liquid Retina XDR display, 16GB RAM, and a battery life that lasts up to 17 hours.",
+    "Specification": [
+      "14-inch Liquid Retina XDR Display",
+      "Apple M2 Pro Chip",
+      "16GB RAM",
+      "512GB SSD",
+      "17-hour Battery Life"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "brand": "Apple"
+  },
+  {
+    "product_id": "GAD008",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co.com/XygVybx/GAD008.jpg",
+    "category": "Computers",
+    "price": 1299.99,
+    "description": "The Dell XPS 13 features a stunning 13.4-inch InfinityEdge display, Intel Core i7 processor, and ultra-portable design. It’s perfect for professionals who need power in a lightweight laptop.",
+    "Specification": [
+      "13.4-inch InfinityEdge Display",
+      "Intel Core i7 Processor",
+      "16GB RAM",
+      "512GB SSD",
+      "Up to 12 hours Battery"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Dell"
+  },
+  {
+    "product_id": "GAD009",
+    "product_title": "Microsoft Surface Laptop 4",
+    "product_image": "https://i.ibb.co.com/wCtrXkg/GAD009.jpg",
+    "category": "Computers",
+    "price": 1599.99,
+    "description": "The Surface Laptop 4 is designed for performance and portability. With a 13.5-inch PixelSense display, Intel Core i7, and up to 32GB of RAM, it's the ideal laptop for professionals, creatives, and students alike.",
+    "Specification": [
+      "13.5-inch PixelSense Display",
+      "Intel Core i7",
+      "32GB RAM",
+      "1TB SSD",
+      "Up to 32 hours Battery"
+    ],
+    "availability": false,
+    "rating": 3.8,
+    "brand": "Microsoft"
+  },
+  {
+    "product_id": "GAD005",
+    "product_title": "Xiaomi 13 Pro",
+    "product_image": "https://i.ibb.co.com/Ttj83v8/GAD005.jpg",
+    "category": "Smartphones",
+    "price": 999.99,
+    "description": "The Xiaomi 13 Pro brings an excellent camera system developed with Leica, a 120Hz AMOLED display, and a Snapdragon 8 Gen 2 processor. It's the perfect flagship phone for tech enthusiasts.",
+    "Specification": [
+      "6.73-inch AMOLED",
+      "50MP Leica Camera",
+      "Snapdragon 8 Gen 2",
+      "4820mAh Battery",
+      "120Hz AMOLED Display"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Xiaomi"
+  },
+  {
+    "product_id": "GAD011",
+    "product_title": "Lenovo ThinkPad X1 Carbon Gen 10",
+    "product_image": "https://i.ibb.co.com/KFYSkLN/GAD011.jpg",
+    "category": "Computers",
+    "price": 1799.0,
+    "description": "Lenovo ThinkPad X1 Carbon Gen 10 offers exceptional performance with its Intel Core i7 processor, stunning 14-inch display, and lightweight design. It’s built for professionals who demand productivity and durability.",
+    "Specification": [
+      "14-inch 4K Display",
+      "Intel Core i7",
+      "16GB RAM",
+      "1TB SSD",
+      "Up to 18 hours Battery"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Lenovo"
+  },
+
+  {
+    "product_id": "GAD001",
+    "product_title": "iPhone 14 Pro Max",
+    "product_image": "https://i.ibb.co.com/gyVK4rL/GAD001.jpg",
+    "category": "Smartphones",
+    "price": 1099.0,
+    "description": "The iPhone 14 Pro Max is powered by the A16 Bionic chip, making it faster and more efficient than ever. Its 48 MP main camera and ProMotion display with adaptive refresh rate make it perfect for photography, gaming, and multitasking.",
+    "Specification": [
+      "6.7-inch OLED Display",
+      "A16 Bionic Chip",
+      "48MP Main Camera",
+      "5G Connectivity",
+      "Battery Life up to 29 hours"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "brand": "Apple"
+  },
+  {
+    "product_id": "GAD018",
+    "product_title": "Bose QuietComfort 45",
+    "product_image": "https://i.ibb.co.com/tcdt4TL/GAD018.jpg",
+    "category": "Headphones",
+    "price": 329.0,
+    "description": "Bose QuietComfort 45 headphones offer excellent noise cancellation, comfort, and sound quality with 24 hours of battery life. Great for traveling or work in noisy environments.",
+    "Specification": [
+      "Active Noise Cancelling",
+      "24 Hours Battery Life",
+      "Bluetooth Connectivity",
+      "Bose Aware Mode",
+      "USB-C Charging"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Bose"
+  },
+  {
+    "product_id": "GAD019",
+    "product_title": "Ring Spotlight Cam",
+    "product_image": "https://i.ibb.co.com/djLPykh/GAD019.jpg",
+    "category": "Security Cameras",
+    "price": 199.99,
+    "description": "The Ring Spotlight Cam offers HD video recording, night vision, and two-way audio. It’s designed to keep your home safe with motion detection and customizable security features.",
+    "Specification": [
+      "1080p HD Video",
+      "Two-Way Audio",
+      "Night Vision",
+      "Motion Detection",
+      "Wi-Fi Connectivity"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "Ring"
+  },
+
+  {
+    "product_id": "GAD022",
+    "product_title": "Anker PowerCore 10000mAh",
+    "product_image": "https://i.ibb.co.com/SBdk8YH/GAD022.jpg",
+    "category": "Accessories",
+    "price": 29.99,
+    "description": "The Anker PowerCore is a compact and powerful portable charger, offering 10000mAh capacity to charge devices on the go. It’s great for your phone, tablet, or laptop.",
+    "Specification": [
+      "10000mAh Capacity",
+      "Fast Charging",
+      "Compact Design",
+      "USB-A and USB-C Ports",
+      "18W Power Delivery"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "Anker"
+  }
+]
