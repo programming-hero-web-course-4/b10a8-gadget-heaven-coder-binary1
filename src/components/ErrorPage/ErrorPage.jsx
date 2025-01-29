@@ -6,7 +6,7 @@ const ErrorPage = () => {
     <div className="grid place-items-center h-screen">
       <div className="text-center">
         <DotLottieReact
-          className="w-[1280px]"
+          className="lg:w-[1280px]"
           src="https://lottie.host/5b145017-b42e-4fb5-a1f7-aad690056c0b/XlPkLCmP5V.lottie"
           loop
           autoplay
