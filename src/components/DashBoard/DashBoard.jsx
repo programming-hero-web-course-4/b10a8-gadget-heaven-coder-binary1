@@ -1,13 +1,24 @@
 import { useContext, useEffect, useState } from "react";
-import CommonBanner from "../CommonBanner/CommonBanner";
 import { GadgetContext } from "../Root/Root";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { getCartList, getWishList } from "../../utilities/addToDb";
+import {
+  getCartList,
+  getWishList,
+  modalOpen,
+  priceSum,
+} from "../../utilities/addToDb";
+import CommonBanner from "../CommonBanner/CommonBanner";
 import DashBoardItems from "../DashBoardItems/DashBoardItems";
+import TabPanelItem from "../TabPanelItem/TabPanelItem";
+import PurchaseModal from "../PurchaesModal/PurchaseModal";
 
 const DashBoard = () => {
   const [cart, setCart] = useState([]);
   const [wish, setWish] = useState([]);
+  const [sort, setSort] = useState(true);
+  const [totalCartPrice, setTotalCartPrice] = useState(0);
+  const [totalWishPrice, setTotalWishPrice] = useState(0);
+  const [purchaseAmount, setPurchaseAmount] = useState(0);
   const AllData = useContext(GadgetContext);
 
   useEffect(() => {
@@ -15,6 +26,7 @@ const DashBoard = () => {
     const cartList = AllData[1].filter((data) =>
       cartId.includes(data.product_id)
     );
+
     setCart(cartList);
   }, [AllData]);
 
@@ -25,6 +37,36 @@ const DashBoard = () => {
     );
     setWish(wishList);
   }, [AllData]);
+
+  useEffect(() => {
+    const totalCartPrice = priceSum(cart.map((price) => price.price));
+    setTotalCartPrice(parseFloat(totalCartPrice.toFixed(2)));
+  }, [cart]);
+
+  useEffect(() => {
+    const totalWishPrice = wish
+      .map((price) => price.price)
+      .reduce((accumulator, number) => number + accumulator, 0);
+    setTotalWishPrice(parseFloat(totalWishPrice.toFixed(2)));
+  }, [wish]);
+
+  const handleSortBtnInCart = () => {
+    setSort(!sort);
+    sort && setCart(cart.sort((a, b) => a.price - b.price));
+    sort || setCart(cart.sort((a, b) => b.price - a.price));
+  };
+
+  const handleSortBtnInWish = () => {
+    setSort(!sort);
+    sort && setWish(wish.sort((a, b) => a.price - b.price));
+    sort || setWish(wish.sort((a, b) => b.price - a.price));
+  };
+
+  const handlePurchaseBtn = () => {
+    setPurchaseAmount(totalCartPrice);
+    modalOpen();
+    setCart([]);
+  };
 
   return (
     <div className="bg-base-200 h-full">
@@ -50,9 +92,22 @@ const DashBoard = () => {
           </TabList>
 
           <TabPanel className="max-w-7xl mx-auto my-8">
-            <h2 className="text-black font-bold text-2xl mb-6  text-center lg:text-left">
-              Cart
-            </h2>
+            <div className="flex gap-6">
+              <TabPanelItem
+                totalPrice={totalCartPrice}
+                handleSortBtn={handleSortBtnInCart}
+                sort={sort}
+                tabName="Cart"
+              ></TabPanelItem>
+              <button
+                onClick={handlePurchaseBtn}
+                className="btn bg-[#9538E2]  rounded-full  text-lg text-white font-bold"
+                disabled={cart.length === 0 ? true : false}
+              >
+                Purchase
+              </button>
+              <PurchaseModal purchaseAmount={purchaseAmount}></PurchaseModal>
+            </div>
             <div className="space-y-6">
               {cart.map((cart) => (
                 <DashBoardItems
@@ -66,9 +121,13 @@ const DashBoard = () => {
             </div>
           </TabPanel>
           <TabPanel className="max-w-7xl mx-auto my-8">
-            <h2 className="text-black font-bold text-2xl mb-6  text-center lg:text-left">
-              Wishlist
-            </h2>
+            <TabPanelItem
+              totalPrice={totalWishPrice}
+              handleSortBtn={handleSortBtnInWish}
+              sort={sort}
+              tabName="Wishlist"
+            ></TabPanelItem>
+
             <div className="space-y-6">
               {wish.map((wish) => (
                 <DashBoardItems

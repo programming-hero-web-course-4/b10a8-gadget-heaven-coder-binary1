@@ -64,7 +64,7 @@ const DashBoardItems = ({ gadget, updateState, AllData, storageType }) => {
 DashBoardItems.propTypes = {
   gadget: PropTypes.object.isRequired,
   updateState: PropTypes.func.isRequired,
-  AllData: PropTypes.object.isRequired,
+  AllData: PropTypes.array.isRequired,
   storageType: PropTypes.string.isRequired,
 };
 export default DashBoardItems;

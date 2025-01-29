@@ -10,6 +10,7 @@ import GadgetDetails from "./components/GadgetDetails/GadgetDetails";
 import { element } from "prop-types";
 import DashBoard from "./components/DashBoard/DashBoard";
 import Statistics from "./components/Statistics/Statistics";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics></Statistics>,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs></ContactUs>,
       },
     ],
   },

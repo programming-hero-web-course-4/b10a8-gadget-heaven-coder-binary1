@@ -55,6 +55,15 @@ const removeFromWish = (id) => {
   localStorage.setItem("wish", wishListStr);
 };
 
+const priceSum = (arr) => {
+  return arr.reduce((acc, num) => num + acc, 0);
+};
+
+const modalOpen = () => {
+  document.getElementById("purchaseModal").showModal();
+  localStorage.removeItem("cart");
+};
+
 export {
   addToCartList,
   addToWishList,
@@ -62,4 +71,6 @@ export {
   getWishList,
   removeFromCart,
   removeFromWish,
+  priceSum,
+  modalOpen,
 };
