@@ -11,26 +11,49 @@ const NavBar = () => {
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isActive ? "underline" : isPending ? "pending" : ""
+            isActive ? "underline decoration-2" : isPending ? "pending" : ""
           }
         >
           Home
         </NavLink>
       </li>
       <li>
-        <a>Statistics</a>
+        <NavLink
+          to="/statistics"
+          className={({ isActive, isPending }) =>
+            isActive
+              ? "underline decoration-2 decoration-[#9538E2]/50"
+              : isPending
+              ? "pending"
+              : ""
+          }
+        >
+          Statistics
+        </NavLink>
       </li>
       <li>
-        <a>Dashboard</a>
+        <NavLink
+          to="/dashboard"
+          className={({ isActive, isPending }) =>
+            isActive
+              ? "underline decoration-2 decoration-[#9538E2]/50"
+              : isPending
+              ? "pending"
+              : ""
+          }
+        >
+          Dashboard
+        </NavLink>
       </li>
     </>
   );
+
   return (
     <div
       className={
         location.pathname === "/" || location.pathname === `/${param.category}`
           ? "navbar z-10 max-w-7xl lg:absolute top-5 left-0 right-0 mx-auto"
-          : "navbar z-10 max-w-7xl  top-5 left-0 right-0 mx-auto"
+          : "navbar max-w-7xl mx-auto"
       }
     >
       <div

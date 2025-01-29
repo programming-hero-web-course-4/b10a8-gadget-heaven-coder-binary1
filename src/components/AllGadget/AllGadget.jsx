@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { GadgetContext } from "../Root/Root";
 import Gadget from "../Gadget/Gadget";
-import { useParams } from "react-router-dom";
 
 const AllGadget = () => {
   const gadgets = useContext(GadgetContext);

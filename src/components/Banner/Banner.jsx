@@ -2,7 +2,7 @@ import bannerImg from "../../assets/banner.png";
 
 const Banner = () => {
   return (
-    <div className="lg:mx-20 lg:pt-5">
+    <div className="lg:mx-5 lg:pt-5">
       <div className="hero bg-[#9538E2] lg:pt-28 pb-16 lg:pb-64 rounded-b lg:rounded-4xl relative">
         <div className="hero-content text-center">
           <div className=" text-white">
@@ -20,7 +20,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <figure className="w-3/4 lg:w-1/2 mx-auto border-2 bg-white/25 border-white rounded-lg p-1 lg:rounded-4xl lg:p-6 absolute bottom-[220px] lg:bottom-[-50px] left-0 right-0">
+      <figure className="w-3/4 lg:w-1/2 mx-auto border-2 bg-white/25 border-white rounded-lg p-1 lg:rounded-4xl lg:p-6 absolute bottom-[220px] lg:bottom-[-220px] 2xl:bottom-[-50px] left-0 right-0">
         <img className="" src={bannerImg} alt="Banner" />
       </figure>
     </div>

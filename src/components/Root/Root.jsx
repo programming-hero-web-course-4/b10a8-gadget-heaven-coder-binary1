@@ -21,14 +21,13 @@ const Root = () => {
       });
   }, []);
   return (
-    <div className="flex flex-col h-screen  font-sora">
+    <div className="flex flex-col h-screen font-sora">
       <NavBar></NavBar>
       <div className="grow">
         <GadgetContext.Provider value={[categories, gadgets]}>
           <Outlet></Outlet>
         </GadgetContext.Provider>
       </div>
-
       <Footer></Footer>
     </div>
   );

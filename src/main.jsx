@@ -7,6 +7,9 @@ import Home from "./components/Home/Home";
 import CategoryGadget from "./components/CategoryGadget/CategoryGadget";
 import AllGadget from "./components/AllGadget/AllGadget";
 import GadgetDetails from "./components/GadgetDetails/GadgetDetails";
+import { element } from "prop-types";
+import DashBoard from "./components/DashBoard/DashBoard";
+import Statistics from "./components/Statistics/Statistics";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +31,11 @@ const router = createBrowserRouter([
       {
         path: "/:category/:gadgetId",
         element: <GadgetDetails></GadgetDetails>,
+      },
+      { path: "/dashboard", element: <DashBoard></DashBoard> },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>,
       },
     ],
   },
