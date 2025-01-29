@@ -96,7 +96,7 @@ const GadgetDetail = () => {
                 value={gadget?.rating}
                 size={24}
                 edit={false}
-                // char={<FaStar />}
+                char={<FaStar />}
               />
             </div>
             <div className="badge badge-lg">{gadget?.rating}</div>

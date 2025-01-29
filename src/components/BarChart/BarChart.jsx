@@ -16,7 +16,6 @@ import {
 
 const BarChart = () => {
   const gadget = useContext(GadgetContext);
-  console.log(gadget[1]);
 
   return (
     <ResponsiveContainer width="100%" height={400}>
