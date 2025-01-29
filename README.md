@@ -4,6 +4,15 @@
 
 PetAdopt is a user-friendly web application that helps potential pet owners find their perfect furry companions through easy pet adoption. The platform connects people with a wide variety of pets in need of loving homes, providing an intuitive search interface, detailed pet profiles, and an easy adoption process.
 
+### Key Features
+
+- **Product Pages:**
+  Clear, detailed product descriptions with high-quality images and pricing information. Including customer reviews.
+- **Filter Options:** A robust filtering system added on the sidebar that allows customers to easily find products based on categories.
+- **Shopping Cart and Checkout:** A smooth, user-friendly shopping cart experience where users choose items and proceed to a secure checkout process.
+- **Mobile Optimization:** A responsive design that ensures the website functions well on all devices, especially smartphones, as many customers shop via mobile.
+- **Statistics:** Here is an engaging statistics page where customers can easily view comprehensive statistics chart based on available items, their prices.
+
 ### Requirements
 
 To run this React project, developer needs the following requirements:
@@ -26,15 +35,6 @@ To run this React project, developer needs the following requirements:
   [Link](https://www.npmjs.com/package/react-toastify)
 - **Tailwind CSS:** A utility-first CSS framework for rapidly building custom designs.
   [Link](https://tailwindcss.com/)
-
-### Key Features
-
-- **Product Pages:**
-  Clear, detailed product descriptions with high-quality images and pricing information. Including customer reviews.
-- **Filter Options:** A robust filtering system added on the sidebar that allows customers to easily find products based on categories.
-- **Shopping Cart and Checkout:** A smooth, user-friendly shopping cart experience where users choose items and proceed to a secure checkout process.
-- **Mobile Optimization:** A responsive design that ensures the website functions well on all devices, especially smartphones, as many customers shop via mobile.
-- **Statistics:** Here is an engaging statistics page where customers can easily view comprehensive statistics chart based on available items, their prices.
 
 ### React Fundamental Concepts
 
