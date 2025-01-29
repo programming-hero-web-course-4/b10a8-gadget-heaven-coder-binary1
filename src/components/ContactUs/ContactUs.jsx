@@ -8,8 +8,8 @@ const ContactUs = () => {
     <div className="h-full">
       <CommonBanner pageName="Contact Us"></CommonBanner>
       <div className="text-center p-10">
-        <div className="flex flex-col md:flex-row justify-center items-center max-w-3xl mx-auto">
-          <div className="flex justify-center flex-col items-center flex-1 flex-grow">
+        <div className="flex flex-col md:flex-row justify-center items-center max-w-3xl mx-auto gap-6">
+          <div className="flex justify-center flex-col items-center flex-1 flex-grow ">
             <div className=" text-[#F6CC5E] text-5xl">
               <FaLocationDot />
             </div>

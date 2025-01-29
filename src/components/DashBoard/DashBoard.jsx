@@ -92,7 +92,7 @@ const DashBoard = () => {
           </TabList>
 
           <TabPanel className="max-w-7xl mx-auto my-8">
-            <div className="flex gap-6">
+            <div className="flex flex-col lg:flex-row mb-6">
               <TabPanelItem
                 totalPrice={totalCartPrice}
                 handleSortBtn={handleSortBtnInCart}
@@ -101,7 +101,7 @@ const DashBoard = () => {
               ></TabPanelItem>
               <button
                 onClick={handlePurchaseBtn}
-                className="btn bg-[#9538E2]  rounded-full  text-lg text-white font-bold"
+                className="btn bg-[#9538E2] rounded-full mt-5 lg:mt-0 lg:ml-5 text-lg text-white font-bold"
                 disabled={cart.length === 0 ? true : false}
               >
                 Purchase

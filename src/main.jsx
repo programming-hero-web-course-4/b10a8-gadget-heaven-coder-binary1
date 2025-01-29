@@ -11,11 +11,13 @@ import { element } from "prop-types";
 import DashBoard from "./components/DashBoard/DashBoard";
 import Statistics from "./components/Statistics/Statistics";
 import ContactUs from "./components/ContactUs/ContactUs";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -24,7 +26,7 @@ const router = createBrowserRouter([
           { path: "/", element: <AllGadget></AllGadget> },
 
           {
-            path: "/:category",
+            path: "/category",
             element: <CategoryGadget></CategoryGadget>,
           },
         ],
